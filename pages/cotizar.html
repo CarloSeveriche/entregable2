@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizar</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+
+    
+
+    <header class="header">
+
+        <a  class="header__logo" href="../index.html">
+                <img src="../img/LogoOdinSinfondo.png" alt="Logo de marca">
+        </a>
+        
+        <nav>   
+            <ul class="header__menu">
+                <li> <a href="../pages/rastrear.html">Rastrear</a></li>
+                <li> <a href="../pages/cotizar.html">Cotizar</a></li>
+                <li> <a href="../pages/recoger.html">Recoger</a></li>
+                <li> <a href="../pages/">Nosotros</a></li>
+            </ul>
+        </nav>
+
+        <a  href="../pages/contacto.html"><button class="header__button" >Contacto</button></a>
+    </header>  
+
+
+
+
+
+
+    <section class="section__opcionEnvio">
+
+        <div class="opcionEnvio__documentos">
+
+            <img class="opcionEnvio__icon" src="../img/iconoDocumenCotizar@2x.svg" alt="envio de documentos">
+
+            <h3 class="tipoEnvio__text">Documentos</h3>
+
+        </div>
+
+        <div class="opcionEnvio__paquetes">
+
+            <img class="opcionEnvio__icon" src="../img/iconoPaquetesCotizar@2x.svg" alt="envio de documentos">
+
+            <h3 class="tipoEnvio__text">Paquetes</h3>
+
+        </div>
+
+        
+
+    </section>
+
+
+
+
+
+
+
+    <section class="section__cotizarEnvio">
+
+        <div class="cotizarEnvio__origenDestino">
+            <div class="cotizarEnvio__origen">
+                <div class="origen"></div>
+                <h3 class="origen__titulo">Lugar de origen</h3>
+                <input type="text" id="origen__input" class="origen__input" name="origen__input"placeholder="Ingrese ciudad de origen">
+            </div>
+            <div class="cotizarEnvio__destino">
+                <div class="destino"></div>
+                <h3 class="destino__titulo">Lugar de destino</h3>
+                <input type="text" id="destino__input" class="destino__input" name="destino__input" placeholder="Ingrese ciudad de destino">
+            </div>
+
+        </div>
+
+        <div class="formaPago">
+            <h3 class="origen__titulo">Lugar de origen</h3>
+
+            <label for="contado">Contado</label>
+            <input type="checkbox" name="contado" id="contado">
+
+            <label for="contraentrega">Contraentrega</label>
+            <input type="checkbox" name="contraentrega" id="contraentrega">
+        </div>
+
+        <div class="peso">
+            <h3 class="peso__titulo">Peso</h3>
+
+            <div class="peso__input">
+                <input type="number" placeholder="Max 2 KL">
+                <h3 class="peso__unidadMedida">KL</h3>
+            </div>
+
+        </div>
+
+        <div class="valDeclara">
+            <h3 class="valDeclara__titulo">Valor declarado</h3>
+
+            <div class="valDeclara__input">
+                <input type="number" placeholder="Min 10.000">
+            </div>
+
+        </div>
+
+        <div class="declarar">
+            <p class="declarar__text">Declaro que la mercancia enviada <br> es mercancía  de <a href="/">transporte prohibido</a></p>
+
+            <input class="declarar__input" type="checkbox">
+        </div>
+
+        <div class="calcular">
+            <button class="calcular__button">Calcular</button>
+
+            <input class="calcular__precio"></input>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <footer class="footer">
+
+        <div class="footer__logo">
+            <img src="../img/LogoOdinSinfondo.png" alt="" class="logo__img">
+        </div>
+
+        <div class="footer__infoContact">
+
+            <ul class="infoContact__list">
+
+                <li class="infoContact__mail"><img src="../img/MailFooter@2x.svg" alt="" class="infoContact__iconMail">Mail@mail.com</li>
+
+                <li class="infoContact__tel"><img src="../img/TelFooter@2x.svg" alt="" class="infoContact__iconTel">31245751245</li>
+
+                <li class="infoContact__direccion"><img src="../img/DirecciónFooter@2x.svg" alt="" class="infoContact__iconDirec">Bogotá calle 1 # 2 - 3</li>
+
+            </ul>
+        </div>
+
+        <div class="footer__info">
+
+            <div class="info1">
+                <h3 class="info1__titulo">Título infor</h3>
+                
+                <p class="info1__parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, voluptatum?</p>
+
+            </div>
+
+            <div class="info1">
+                <h3 class="info1__titulo">Título infor</h3>
+                
+                <p class="info1__parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, voluptatum?</p>
+
+                <p class="info1__parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, voluptatum?</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    
+</body>
+</html>

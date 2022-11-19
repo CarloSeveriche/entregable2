@@ -1,0 +1,775 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* HEADER */
+
+li, a, button {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 10%;
+    background-color: #ddf9fb;
+    height: 72px;
+   
+}
+.header__logo{
+    cursor: pointer;
+}
+.header__logo img{
+    height: 56px;
+    width: auto;
+}
+.header__menu{
+    list-style: none;
+
+}
+.header__menu li{
+    display: inline-block;
+    padding: 0px 20px;
+    
+}
+.header__menu li a{
+    transition: all 0.3s ease 0s;
+    color: #6a6a6a;
+}
+.header__menu li a:hover{
+    color: #50ccd7;
+}
+button{
+    padding: 8px 24px;
+    background-color:rgb(72, 198, 212) ;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color:#ffffff;
+}
+button:hover{
+    background-color:rgba(72, 198, 212, 0.7) ;
+    color: #6a6a6a;
+}
+
+
+
+
+/* PÁGINA INDEX */
+
+.section__buscador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px;
+    
+   
+}
+.section__buscador form{
+    margin: auto;
+    
+    
+}
+.section__buscador form .section__numeroGuia{
+    display: flex;
+    background: #ffffff;
+    padding: 8px 80px;
+    border-radius: 30px;
+    border: 1px solid #afafaf ;
+    box-shadow: rgba(255, 255, 255, 0.5) -8px -8px 10px, rgba(0,0,0,0.1) 5px 5px 5px, rgba(255, 255, 255, 0.5) -8px -8px 10px inset, rgba(0,0,0,0.1) 5px 5px 5px inset;
+    width: 588px;
+    height: 48px;
+    
+    
+    
+}
+.section__buscador form .section__numeroGuia input{
+    padding-left: 16px;
+}
+.section__numeroGuia input{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    background: transparent;
+    color: #6a6a6a;
+    font-weight: 300;
+    width: 380px; 
+}
+.lupa{
+    position: relative;
+    left: 384px;;
+}
+.section__button{
+    padding: 10px 24px;
+    background-color:rgb(72, 198, 212) ;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color:#ffffff;
+    position: relative;
+    right: 440px;
+}
+
+/* PÁGINA INDEX BANNER */
+
+
+.section__banner{
+    position: absolute;
+    top: 72px;
+}
+.section__banner .banner__img{
+    width: 1440px ;
+    height: 500px;
+    
+    
+}
+.section__banner .banner__text{
+    font-size: 80px;
+    position: absolute;
+    color: #fefefe;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    top: 100px;
+    left: 200px;
+    
+
+}
+
+/* PÁGINA INDEX SERVICIOS */
+
+.section__servicios{
+    position: absolute;
+    width: 100%;
+    top: 580px;   
+}
+.section__servicios .servicios__h1{
+ 
+    margin: 24px 0px;
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: #313131;
+    text-align: center;
+} 
+.section__servicios .servicios__cards{
+    position: absolute;
+    top: 100px;
+    left: 0%;
+    
+}
+.section__servicios .servicios__cards .servicios__card1{
+    height: 300px;
+    width: 270px;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 8px;
+    box-shadow: rgba(255, 255, 255, 0.5) -8px -8px 10px, rgba(106, 106, 106, 0.1) 5px 5px 5px, rgba(255, 255, 255, 0.5) -8px -8px 10px , rgba(209, 209, 209, 0.1) 5px 5px 5px;
+    position: relative;
+    margin: 0px 104px;
+    
+}
+.section__servicios .servicios__cards .servicios__card1 .card1__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+}
+.section__servicios .servicios__cards .servicios__card1 .card__degradado{
+
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.827),rgba(4, 101, 125, 0.143))
+    
+
+}
+.section__servicios .servicios__cards .servicios__card1 .card1__icon{
+    position: absolute;
+    top: 24px;
+    left: 16px;
+    height: 40px;
+}
+.section__servicios .servicios__cards .servicios__card1 .card1__titulo{
+
+    position: absolute;
+    left: 16px;
+    color: #ffffff;
+    width: 50px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    top: 30%;
+}
+.section__servicios .servicios__cards .servicios__card1 .card1__texto{
+ 
+        position: absolute;
+        left: 16px;
+        color: #ffffff; 
+        top: 50%;
+        width: 200px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+
+}
+.section__servicios .servicios__cards{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+   
+}
+
+
+/* PÁGINA INDEX BANNER 2*/
+
+.section__banner2{
+    position: absolute;
+    margin: 0px 120px;
+    display: flex;
+    top:1020px;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.5) -8px -8px 10px, rgba(106, 106, 106, 0.1) 5px 5px 5px, rgba(255, 255, 255, 0.5) -8px -8px 10px , rgba(209, 209, 209, 0.1) 5px 5px 5px;
+    background-color: #ddf9fb;
+}
+.section__banner2 .banner__img{
+    width: 50%;
+    border-radius: 20px 0px 0px 20px;
+
+}
+.section__banner2 .banner2__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.section__banner2 .banner2__text .banner2__titulo{
+    text-align: center;
+    font-size: 40px;
+    color: #313131;
+    font-family: 'Roboto', sans-serif;
+}
+.section__banner2 .banner2__text .banner2__parrafo{
+    margin: 24px 60px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #313131;
+}
+
+
+
+
+
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background-color: #ddf9fb;
+    justify-content: space-between;
+    padding: 16px 80px;
+    align-items: center;
+    margin-top: 100%;
+    
+}
+.footer .footer__logo .logo__img{
+    width: 240px;
+    height: auto;
+}
+.footer__infoContact .infoContact__list li{
+    font-size: 20px;
+    text-decoration: none;
+    margin: 16px;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    color: #313131;
+}
+.footer__infoContact .infoContact__list img{
+    box-sizing: border-box;
+    width: 24px;
+    margin: 0px 16px ;
+    align-content: center;
+}
+.footer .footer__info{
+    display: flex;
+    width: 45%;
+}
+.footer .footer__info .info1{
+    margin:16px;
+}
+.footer .footer__info .info1 h3{
+    font-size: 20px;
+    margin: 8px;
+    font-family: 'Roboto', sans-serif;
+    color: #313131;
+
+}
+.footer .footer__info .info1 p{
+    font-size: 16px;
+    width: 250px;
+    margin: 8px;
+    font-family: 'Roboto', sans-serif;
+    color: #313131;
+    
+}
+
+
+
+
+
+
+
+/* PÁGINA COTIZAR */
+
+.section__opcionEnvio{
+
+    position: relative;
+    width: 996px;
+    height: 139px;
+    left: 222px;
+    top: 24px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+}
+.section__opcionEnvio .opcionEnvio__documentos{
+    position: absolute;
+    width: 277px;
+    height: 70px;
+    top:34px;
+    left: 204px;
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;  
+    color: #313131; 
+    
+}   
+.section__opcionEnvio .opcionEnvio__paquetes{
+    position: absolute;
+    width: 277px;
+    height: 70px;
+    top:34px;
+    left: 510px;
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    color: #313131; 
+}   
+
+
+.section__cotizarEnvio{
+    position: relative;
+    width: 996px;
+    height: 800px;
+    left: 222px;
+    top: 40px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.cotizarEnvio__origenDestino{
+    display: flex;
+    position: absolute;
+    width: 786px;
+    height: 84px;
+    left: 102px;
+    top: 60px;
+    
+   
+
+}
+.cotizarEnvio__origen{
+    position: relative;
+    left: 102px;
+}
+.cotizarEnvio__origen h3{
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #313131; 
+    
+}
+.origen__input{
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    background: #F0F0F0;
+    border-radius: 85px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #313131; 
+    text-indent: 24px;
+    left: 0%;
+
+}
+
+
+.cotizarEnvio__destino{
+    position: relative;
+    left: 270px;
+}
+.cotizarEnvio__destino h3{
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #313131; 
+
+}
+.destino__input{
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    background: #F0F0F0;
+    border-radius: 85px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #313131; 
+    text-indent: 24px;
+    left: 0%;
+
+}
+
+
+
+.formaPago{
+    position:absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #313131; 
+    left: 202px;
+    top: 184px;
+}
+.formaPago h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+.formaPago input{
+    margin-right: 32px;
+    margin-top: 16px;
+
+}
+
+
+
+.peso{
+    position:absolute;
+    font-family: 'Roboto', sans-serif;
+    color: #313131; 
+    left: 202px;
+    top: 290px;
+}
+.peso__titulo{
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #313131;
+}
+.peso__input{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+.peso__input input{
+    margin-right: 24px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: none ;
+    width: 250px;
+    height: 40px;
+    background: #F0F0F0;
+    text-indent: 24px;
+
+}
+.peso__unidadMedida{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #313131;
+}
+
+
+
+.valDeclara{
+    position:absolute;
+    font-family: 'Roboto', sans-serif;
+    color: #313131; 
+    left: 202px;
+    top: 410px;
+}
+.valDeclara__titulo{
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #313131;
+}
+.valDeclara__input{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+.valDeclara__input input{
+    margin-right: 24px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: none ;
+    width: 250px;
+    height: 40px;
+    background: #F0F0F0;
+    text-indent: 24px;
+
+}
+
+
+
+.declarar{
+    position:absolute;
+    font-family: 'Roboto', sans-serif;
+    color: #313131; 
+    left: 202px;
+    top: 530px;
+    display: flex;
+    align-items: center;
+}
+.declarar p{
+    margin-right: 24px;
+}
+.declarar p a{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+
+.calcular{
+    position:absolute;
+    font-family: 'Roboto', sans-serif;
+    color: #313131; 
+    left: 202px;
+    top: 620px;
+    align-items: center;
+    
+}
+.calcular__button{
+    background-color: #50ccd7;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 16px;
+    color: #ffffff;
+    transition: all 0,3s ease 0;
+    display: block;
+}
+.calcular__button:hover{
+    background-color:rgba(72, 198, 212, 0.7) ;
+    color: #6a6a6a;
+}
+.calcular__precio{
+    background-color: #6a6a6a;
+    margin-right: 24px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: none ;
+    width: 177px;
+    height: 40px;
+    background: #d1d0d0;
+    text-indent: 24px;
+    margin-top: 16px;
+    
+}
+
+
+
+
+
+
+
+/* PÁGINA RECOGER*/
+
+.remitente{
+    width: 1200px;
+    margin: 24px auto;
+    
+}
+.remitente__titulo{
+    width: 1200px;
+    height: 56px;
+    background:#50ccd7;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 4px 4px 0px 0px;
+    font-family: 'Roboto', sans-serif;
+    padding:  16px 16px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    z-index: 90;
+}
+.datos{
+    display:flex;
+    width: 1200px;
+    margin: 0px auto;
+    height: 450px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.remitente .datos{
+    justify-content:space-around;
+}
+.remitente__datos1{
+    
+    font-family: 'Roboto', sans-serif;
+    color: #313131;
+}
+.datos label{
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #313131;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.datos .datos1 input{
+    width: 450px;
+    height: 40px;
+    background: #F0F0F0;
+    border-radius: 85px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #313131; 
+    text-indent: 24px;
+}
+.formaPagoRecoger .origen__titulo{
+    margin-top: 32px;
+}
+.box__formaPagoRecoger{
+    display: flex;
+
+}
+.box__formaPagoRecoger label{
+    align-items: center;
+    margin-right: 16px;
+}
+.box__formaPagoRecoger input{
+    margin-right: 32px;
+    margin-top: 16px;
+}
+
+
+
+
+/* PÁGINA CONTACTO*/
+
+.remitente2{
+    width: 1200px;
+    margin: 24px auto;
+    
+}
+.remitente__titulo{
+    width: 1200px;
+    height: 56px;
+    background:#50ccd7;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 4px 4px 0px 0px;
+    font-family: 'Roboto', sans-serif;
+    padding:  16px 16px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    z-index: 90;
+}
+.remitente2 .datos{
+    display:flex;
+    width: 1200px;
+    margin: 0px auto;
+    height: 560px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.remitente2 .datos{
+    justify-content:space-around;
+}
+textarea{
+    width: 450px;
+    height: 100px;
+    background: #F0F0F0;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #313131; 
+    text-indent: 24px;
+}
+
+
+section.info{
+    width: 1200px;
+    margin: 0px auto;
+    height: 360px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: relative;   
+}
+.info ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.info li{
+    font-size: 30px;
+    list-style: none;
+    margin-top: 100px;
+    font-family: 'Roboto', sans-serif;
+    color: #313131;
+    justify-content: center;
+}
+.info li img{
+    height: 50px;
+    display: block;
+    margin:16px auto;
+}
