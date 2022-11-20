@@ -8,12 +8,12 @@
 }
 
 
+
+
+
 body{
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
 }
-
-
 
 
 /* HEADER */
@@ -25,28 +25,29 @@ li, a, button {
     font-size: 20px;
 }
 header{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     align-items: center;
-    padding: 24px 10%;
+    grid-template-columns: 1fr 3fr 1fr;
     background-color: #ddf9fb;
     height: 72px;
    
 }
 .header__logo{
     cursor: pointer;
+   margin: 0% 20%;
 }
 .header__logo img{
-    height: 56px;
+    max-height: 56px;
     width: auto;
 }
 .header__menu{
     list-style: none;
+    display: flex;
 
 }
 .header__menu li{
-    display: inline-block;
-    padding: 0px 20px;
+    
+    padding: 0px 16px;
     
 }
 .header__menu li a{
@@ -74,6 +75,8 @@ button:hover{
 
 
 /* PÁGINA INDEX */
+
+
 
 .section__buscador{
     display: flex;
@@ -133,18 +136,20 @@ button:hover{
 
 
 .section__banner{
-    position: absolute;
-    top: 72px;
+    height: 400px;
+    align-items: center;
+    
 }
 .section__banner .banner__img{
-    width: 1440px ;
-    height: 500px;
+    width: 100% ;
+    align-self: center;
+    
     
     
 }
 .section__banner .banner__text{
     font-size: 80px;
-    position: absolute;
+  
     color: #fefefe;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
@@ -157,7 +162,7 @@ button:hover{
 /* PÁGINA INDEX SERVICIOS */
 
 .section__servicios{
-    position: absolute;
+    
     width: 100%;
     top: 580px;   
 }
@@ -171,7 +176,7 @@ button:hover{
     text-align: center;
 } 
 .section__servicios .servicios__cards{
-    position: absolute;
+  
     top: 100px;
     left: 0%;
     
@@ -190,7 +195,7 @@ button:hover{
     width: 100%;
     height: 100%;
     border-radius: 8px;
-    position: absolute;
+    
     top: 0%;
     left: 0%;
 
@@ -200,20 +205,20 @@ button:hover{
     height: 100%;
     width: 100%;
     border-radius: 8px;
-    position: absolute;
+   
     background-image: linear-gradient(rgba(0, 0, 0, 0.827),rgba(4, 101, 125, 0.143))
     
 
 }
 .section__servicios .servicios__cards .servicios__card1 .card1__icon{
-    position: absolute;
+   
     top: 24px;
     left: 16px;
     height: 40px;
 }
 .section__servicios .servicios__cards .servicios__card1 .card1__titulo{
 
-    position: absolute;
+   
     left: 16px;
     color: #ffffff;
     width: 50px;
@@ -223,7 +228,7 @@ button:hover{
 }
 .section__servicios .servicios__cards .servicios__card1 .card1__texto{
  
-        position: absolute;
+       
         left: 16px;
         color: #ffffff; 
         top: 50%;
@@ -243,7 +248,7 @@ button:hover{
 /* PÁGINA INDEX BANNER 2*/
 
 .section__banner2{
-    position: absolute;
+    
     margin: 0px 120px;
     display: flex;
     top:1020px;
@@ -286,7 +291,6 @@ button:hover{
     display: flex;
     width: 100%;
     height: 200px;
-    position: absolute;
     background-color: #ddf9fb;
     justify-content: space-between;
     padding: 16px 80px;
@@ -773,3 +777,5 @@ section.info{
     display: block;
     margin:16px auto;
 }
+
+
